@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rocks and Papers and Scissors again.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,34 +13,48 @@
 
 <body>
     <div class="container-fluid" id="header">
-        <h1>Rocks and Papers and Scissors.</h1>
+        <h1>Rocks and Papers and Scissors again.</h1>
     </div>
     <div class="container-fluid" id="game-space">
         <div class="row">
-            <div class="col-sm-4 offset-sm-2">
+            <div class="col-sm-3 offset-sm-1">
                 <span id="player-one-start">
-                    <input type="text" id="player-one-name">
+                    <input type="text" class="input-group-text login-text" id="player-one-name">
                     <button class="btn btn-primary player-start-button" id="player-one-login">Log In</button>
                 </span>
+            </div>
+            <div class="col-sm-3 offset-sm-4">
+                <span id="player-two-start">Waiting on Player 1</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 offset-sm-1">
+                <div class="card" id="player-one-card">
+                    <h5 class="card-title" id="player-one-title">Player 1</h5>
+                    <div class="card-body" id="player-one-card-body">
+                    </div>
                 </div>
-            <div class="col-sm-4 offset-sm-2"><span id="player-two-start">Waiting on Player 1</span></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5 offset-sm-1">
-                <div class="jumbotron player-space" id="player-one-space">Player 1</div>
             </div>
-            <div class="col-sm-5 offset-sm-1">
-                <div class="jumbotron player-space" id="player-two-space">Player 2</div>
+            <div class="col-sm-2 offset-sm-1">
+                <div class="card" id="results">
+                    <div class="card-body" id="results-body">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 offset-sm-4">
-                <div class="jumbotron">Game Result</div>
+            <div class="col-sm-3 offset-sm-1">
+                <div class="card" id="player-two-card">
+                    <h5 class="card-title" id="player-two-title">Player 2</h5>
+                    <div class="card-body" id="player-two-card-body"></div>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 offset-sm-3">
-                <div class="jumbotron">Chat</div>
+                 <div class="chatarea"> 
+                    <textarea readonly="readonly" rows=10 class="scrollabletextbox" name="note" id="chat-box"></textarea>
+                    <input type="text" class = "input-group-text chat-text-input" id="chat-input">
+                    <button class="btn btn-primary" id="chat-submit">Send!</button>
+                </div> 
             </div>
         </div>
     </div>

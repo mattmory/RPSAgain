@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 0;
-}
+} */
 
 body {
     background-color: lightgray;  
@@ -25,4 +25,48 @@ body {
 #game-space {
     margin: auto;
     width: 100%;
+}
+
+.chatarea {
+    padding: 0;
+}
+
+.scrollabletextbox {
+    width:100%;
+    height:100%;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+    overflow:scroll;
+}
+
+.card {
+    margin: 10 0 10 0;
+}
+
+.card-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chat-text-input {
+    width: 83%;
+    float: left;
+    text-align: left;
+}
+
+.login-text
+{
+    width: 73%;
+    float: left;
+    text-align: left;
+}
+
+.player-start-button {
+    width: 24%;
+    float: right;
+}
+
+#chat-submit {
+    width: 13%;
+    float: right;
 }
